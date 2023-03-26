@@ -1,0 +1,12 @@
+<article>
+  <h2><tg-slot name="title"></tg-slot></h2>
+  <div class="text-right p-2 italic text-sm text-pink-700">
+    <tg-date name="date"></tg-date>
+  </div>
+  <tg-content></tg-content>
+  <tg-if-complete>
+    <div class="border-t-2 border-slate-700 p-2 text-xs text-slate-700">
+      <tg-slot name="comment"></tg-slot>
+    </div>
+  </tg-if-complete>
+</article>
